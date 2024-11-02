@@ -458,57 +458,15 @@
         ]
     },
     {
-        "id": "e2929e22b0eec07a",
-        "type": "ui-gauge",
-        "z": "81ea8d2ba008bf4e",
-        "name": "Suhu",
-        "group": "5fbbb83a49a332fb",
-        "order": 1,
-        "width": "6",
-        "height": "3",
-        "gtype": "gauge-half",
-        "gstyle": "rounded",
-        "title": "Suhu",
-        "units": "℃",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "20",
-                "color": "#5cd65c"
-            },
-            {
-                "from": "60",
-                "color": "#ffc800"
-            },
-            {
-                "from": "80",
-                "color": "#ea5353"
-            }
-        ],
-        "min": "20",
-        "max": "100",
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 230,
-        "y": 300,
-        "wires": []
-    },
-    {
         "id": "c0043927ec98cdd8",
         "type": "ui-gauge",
         "z": "81ea8d2ba008bf4e",
-        "name": "Kelembapan",
+        "name": "Kelembapan DHT1",
         "group": "5fbbb83a49a332fb",
         "order": 2,
         "width": "6",
         "height": "3",
-        "gtype": "gauge-tank",
+        "gtype": "gauge-tile",
         "gstyle": "rounded",
         "title": "Kelembapan",
         "units": "%",
@@ -537,7 +495,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 250,
+        "x": 270,
         "y": 340,
         "wires": []
     },
@@ -612,7 +570,7 @@
         "group": "48478668d2bb73ed",
         "page": "",
         "ui": "",
-        "name": "",
+        "name": "Cam1",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -623,7 +581,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 440,
+        "x": 490,
         "y": 300,
         "wires": [
             []
@@ -636,7 +594,7 @@
         "group": "0d9009487dfe269b",
         "page": "",
         "ui": "",
-        "name": "",
+        "name": "Cam2",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -647,7 +605,7 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 440,
+        "x": 490,
         "y": 340,
         "wires": [
             []
@@ -708,7 +666,7 @@
         "width": 6,
         "height": 8,
         "className": "",
-        "x": 630,
+        "x": 690,
         "y": 300,
         "wires": [
             []
@@ -769,7 +727,7 @@
         "width": 6,
         "height": 8,
         "className": "",
-        "x": 650,
+        "x": 710,
         "y": 340,
         "wires": [
             []
@@ -779,7 +737,7 @@
         "id": "1f497a7f923ce9d9",
         "type": "ui-gauge",
         "z": "81ea8d2ba008bf4e",
-        "name": "Kelembapan",
+        "name": "Kelembapan DHT2",
         "group": "d5ffd97107a937b2",
         "order": 2,
         "width": "6",
@@ -813,7 +771,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 250,
+        "x": 270,
         "y": 440,
         "wires": []
     },
@@ -821,7 +779,7 @@
         "id": "dc4797a1b538f3c1",
         "type": "ui-gauge",
         "z": "81ea8d2ba008bf4e",
-        "name": "Suhu",
+        "name": "Suhu DHT2",
         "group": "d5ffd97107a937b2",
         "order": 1,
         "width": "6",
@@ -855,7 +813,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 230,
+        "x": 250,
         "y": 400,
         "wires": []
     },
@@ -863,7 +821,7 @@
         "id": "c5b4ac91af6096d7",
         "type": "ui-gauge",
         "z": "81ea8d2ba008bf4e",
-        "name": "Suhu",
+        "name": "Suhu DHT3",
         "group": "d098783a63f0c24c",
         "order": 1,
         "width": "6",
@@ -897,7 +855,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 230,
+        "x": 250,
         "y": 500,
         "wires": []
     },
@@ -905,7 +863,7 @@
         "id": "9b11fb4af7ced321",
         "type": "ui-gauge",
         "z": "81ea8d2ba008bf4e",
-        "name": "Kelembapan",
+        "name": "Kelembapan DHT3",
         "group": "d098783a63f0c24c",
         "order": 2,
         "width": "6",
@@ -939,7 +897,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 250,
+        "x": 270,
         "y": 540,
         "wires": []
     },
@@ -998,7 +956,7 @@
         "width": 6,
         "height": 8,
         "className": "",
-        "x": 650,
+        "x": 710,
         "y": 460,
         "wires": [
             []
@@ -1059,7 +1017,7 @@
         "width": 6,
         "height": 8,
         "className": "",
-        "x": 630,
+        "x": 690,
         "y": 420,
         "wires": [
             []
@@ -1120,7 +1078,7 @@
         "width": 6,
         "height": 8,
         "className": "",
-        "x": 650,
+        "x": 710,
         "y": 580,
         "wires": [
             []
@@ -1181,10 +1139,52 @@
         "width": 6,
         "height": 8,
         "className": "",
-        "x": 630,
+        "x": 690,
         "y": 540,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "e2929e22b0eec07a",
+        "type": "ui-gauge",
+        "z": "81ea8d2ba008bf4e",
+        "name": "Suhu DHT1",
+        "group": "5fbbb83a49a332fb",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "Suhu",
+        "units": "℃",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "20",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353"
+            }
+        ],
+        "min": "20",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 250,
+        "y": 300,
+        "wires": []
     }
 ]
