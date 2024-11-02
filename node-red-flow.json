@@ -1,0 +1,1190 @@
+[
+    {
+        "id": "81ea8d2ba008bf4e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "77231a06594c19bf",
+        "type": "ui_group",
+        "name": "SolarDomDryerDashboard",
+        "tab": "fa96a93948a747ee",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fa96a93948a747ee",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "42cd7805dc2c67de",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#ff5900",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#ff5900",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ff5900",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ff8b4d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#ff5900",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Lucida Sans Unicode,Lucida Grande,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "36f6cd7493a231b5",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "showPageTitle": true,
+        "navigationStyle": "default",
+        "titleBarStyle": "default"
+    },
+    {
+        "id": "41937a03db17bc48",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "32eb8f52687781d5",
+        "type": "ui-page",
+        "name": "Dashboard",
+        "ui": "36f6cd7493a231b5",
+        "path": "/page1",
+        "icon": "mdi-view-dashboard",
+        "layout": "grid",
+        "theme": "41937a03db17bc48",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "9b0880496c877850",
+        "type": "ui-group",
+        "name": "Relay",
+        "page": "32eb8f52687781d5",
+        "width": "6",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5fbbb83a49a332fb",
+        "type": "ui-group",
+        "name": "DHT 1",
+        "page": "32eb8f52687781d5",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2f458da2b73d43da",
+        "type": "ui-page",
+        "name": "Monitoring ",
+        "ui": "36f6cd7493a231b5",
+        "path": "/page2",
+        "icon": "mdi-cctv",
+        "layout": "grid",
+        "theme": "41937a03db17bc48",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "48478668d2bb73ed",
+        "type": "ui-group",
+        "name": "Cam 1",
+        "page": "2f458da2b73d43da",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0d9009487dfe269b",
+        "type": "ui-group",
+        "name": "Cam 2",
+        "page": "2f458da2b73d43da",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "39c1441e344d8bd5",
+        "type": "ui-page",
+        "name": "Timeline",
+        "ui": "36f6cd7493a231b5",
+        "path": "/page3",
+        "icon": "mdi-chart-areaspline",
+        "layout": "grid",
+        "theme": "41937a03db17bc48",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "07646e86c0b6dcf2",
+        "type": "ui-group",
+        "name": "Grafik DHT 1",
+        "page": "39c1441e344d8bd5",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d1e06d98d72940c6",
+        "type": "ui-group",
+        "name": "Grafik DHT 2",
+        "page": "39c1441e344d8bd5",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d5ffd97107a937b2",
+        "type": "ui-group",
+        "name": "DHT 2",
+        "page": "32eb8f52687781d5",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d098783a63f0c24c",
+        "type": "ui-group",
+        "name": "DHT 3",
+        "page": "32eb8f52687781d5",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b074cfa9a45a2a71",
+        "type": "ui-group",
+        "name": "Grafik DHT 3",
+        "page": "39c1441e344d8bd5",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "13e5807123579897",
+        "type": "ui-switch",
+        "z": "81ea8d2ba008bf4e",
+        "name": "",
+        "label": "Relay 1",
+        "group": "9b0880496c877850",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "line",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 240,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb906b0577114f7a",
+        "type": "ui-switch",
+        "z": "81ea8d2ba008bf4e",
+        "name": "",
+        "label": "Relay 2",
+        "group": "9b0880496c877850",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "line",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 240,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e2929e22b0eec07a",
+        "type": "ui-gauge",
+        "z": "81ea8d2ba008bf4e",
+        "name": "Suhu",
+        "group": "5fbbb83a49a332fb",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "Suhu",
+        "units": "℃",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "20",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353"
+            }
+        ],
+        "min": "20",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 230,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c0043927ec98cdd8",
+        "type": "ui-gauge",
+        "z": "81ea8d2ba008bf4e",
+        "name": "Kelembapan",
+        "group": "5fbbb83a49a332fb",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-tank",
+        "gstyle": "rounded",
+        "title": "Kelembapan",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 250,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "094be25653a3b7e9",
+        "type": "ui-switch",
+        "z": "81ea8d2ba008bf4e",
+        "name": "",
+        "label": "Relay 3",
+        "group": "9b0880496c877850",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "line",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 240,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e809dc7ab0cdc73a",
+        "type": "ui-switch",
+        "z": "81ea8d2ba008bf4e",
+        "name": "",
+        "label": "Relay 4",
+        "group": "9b0880496c877850",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "line",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 240,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19570478c8ffcc2b",
+        "type": "ui-template",
+        "z": "81ea8d2ba008bf4e",
+        "group": "48478668d2bb73ed",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<img width=\"100%\" src=\"http://192.168.1.6:5000/video_feed\" alt=\"cam1\">",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 440,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56df89ac78f8838e",
+        "type": "ui-template",
+        "z": "81ea8d2ba008bf4e",
+        "group": "0d9009487dfe269b",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<img width=\"100%\" src=\"http://192.168.1.6:5000/video_feed\" alt=\"cam2\">",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 440,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a1c3693ebc30261",
+        "type": "ui-chart",
+        "z": "81ea8d2ba008bf4e",
+        "group": "07646e86c0b6dcf2",
+        "name": "Suhu DHT 1",
+        "label": "Suhu",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Waktu",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Suhu",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 630,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d962272ebf6dab1d",
+        "type": "ui-chart",
+        "z": "81ea8d2ba008bf4e",
+        "group": "07646e86c0b6dcf2",
+        "name": "Kelembapan DHT 1",
+        "label": "Kelembapan",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Waktu",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Kelembapan",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 650,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f497a7f923ce9d9",
+        "type": "ui-gauge",
+        "z": "81ea8d2ba008bf4e",
+        "name": "Kelembapan",
+        "group": "d5ffd97107a937b2",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-tank",
+        "gstyle": "rounded",
+        "title": "Kelembapan",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 250,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "dc4797a1b538f3c1",
+        "type": "ui-gauge",
+        "z": "81ea8d2ba008bf4e",
+        "name": "Suhu",
+        "group": "d5ffd97107a937b2",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "Suhu",
+        "units": "℃",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "20",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353"
+            }
+        ],
+        "min": "20",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 230,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c5b4ac91af6096d7",
+        "type": "ui-gauge",
+        "z": "81ea8d2ba008bf4e",
+        "name": "Suhu",
+        "group": "d098783a63f0c24c",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "Suhu",
+        "units": "℃",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "20",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353"
+            }
+        ],
+        "min": "20",
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 230,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "9b11fb4af7ced321",
+        "type": "ui-gauge",
+        "z": "81ea8d2ba008bf4e",
+        "name": "Kelembapan",
+        "group": "d098783a63f0c24c",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "gtype": "gauge-tank",
+        "gstyle": "rounded",
+        "title": "Kelembapan",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 250,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b9eb6f48d5cbb6f0",
+        "type": "ui-chart",
+        "z": "81ea8d2ba008bf4e",
+        "group": "d1e06d98d72940c6",
+        "name": "Kelembapan DHT 2",
+        "label": "Kelembapan",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Waktu",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Kelembapan",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 650,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3d3ec6943826e3f",
+        "type": "ui-chart",
+        "z": "81ea8d2ba008bf4e",
+        "group": "d1e06d98d72940c6",
+        "name": "Suhu DHT 2",
+        "label": "Suhu",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Waktu",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Suhu",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 630,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88572956155dae22",
+        "type": "ui-chart",
+        "z": "81ea8d2ba008bf4e",
+        "group": "b074cfa9a45a2a71",
+        "name": "Kelembapan DHT 3",
+        "label": "Kelembapan",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Waktu",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Kelembapan",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 650,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc41e455e8b395cb",
+        "type": "ui-chart",
+        "z": "81ea8d2ba008bf4e",
+        "group": "b074cfa9a45a2a71",
+        "name": "Suhu DHT 3",
+        "label": "Suhu",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "Waktu",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Suhu",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 630,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    }
+]
