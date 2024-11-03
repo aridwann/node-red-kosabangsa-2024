@@ -33,6 +33,7 @@
    a. Untuk node-red masukkan : `"C:\Users\<NamaPengguna>\AppData\Roaming\npm\node-red.cmd"`  
    b. Untuk eksekusi python masukkan : `"C:\path\to\python.exe" "C:\path\to\namafile.py"`  
    c. Untuk mosquitto : `"C:\path\to\mosquitto.exe"`
+   * Sesuaikan path
 4. Simpan Shortcut dan tutup folder. Saat komputer di-restart, perintah di dalam folder Startup akan dijalankan secara otomatis.
    
 Berikut nodes nya:  
