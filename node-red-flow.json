@@ -8,6 +8,367 @@
         "env": []
     },
     {
+        "id": "77231a06594c19bf",
+        "type": "ui_group",
+        "name": "SolarDomDryerDashboard",
+        "tab": "fa96a93948a747ee",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fa96a93948a747ee",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "42cd7805dc2c67de",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#ff5900",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#ff5900",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ff5900",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ff8b4d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#ff5900",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Lucida Sans Unicode,Lucida Grande,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "36f6cd7493a231b5",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "showPageTitle": true,
+        "navigationStyle": "default",
+        "titleBarStyle": "default"
+    },
+    {
+        "id": "41937a03db17bc48",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "32eb8f52687781d5",
+        "type": "ui-page",
+        "name": "Dashboard",
+        "ui": "36f6cd7493a231b5",
+        "path": "/page1",
+        "icon": "mdi-view-dashboard",
+        "layout": "grid",
+        "theme": "41937a03db17bc48",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "9b0880496c877850",
+        "type": "ui-group",
+        "name": "Relay",
+        "page": "32eb8f52687781d5",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5fbbb83a49a332fb",
+        "type": "ui-group",
+        "name": "DHT 1",
+        "page": "32eb8f52687781d5",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2f458da2b73d43da",
+        "type": "ui-page",
+        "name": "Monitoring ",
+        "ui": "36f6cd7493a231b5",
+        "path": "/page2",
+        "icon": "mdi-cctv",
+        "layout": "grid",
+        "theme": "41937a03db17bc48",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "48478668d2bb73ed",
+        "type": "ui-group",
+        "name": "Cam 1",
+        "page": "2f458da2b73d43da",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d5ffd97107a937b2",
+        "type": "ui-group",
+        "name": "DHT 2",
+        "page": "32eb8f52687781d5",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "23e15791c0b07c10",
+        "type": "mqtt-broker",
+        "name": "mqtt",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6cc0a9e10713cb5b",
+        "type": "ui-page",
+        "name": "Tentang Kami",
+        "ui": "36f6cd7493a231b5",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "41937a03db17bc48",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "122532c25e1a593b",
+        "type": "ui-group",
+        "name": "Tentang Kami",
+        "page": "6cc0a9e10713cb5b",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
         "id": "13e5807123579897",
         "type": "ui-switch",
         "z": "81ea8d2ba008bf4e",
@@ -33,8 +394,8 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 120,
-        "y": 420,
+        "x": 260,
+        "y": 280,
         "wires": [
             [
                 "9e0d2f66f82fdcdd"
@@ -67,79 +428,11 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 120,
-        "y": 480,
+        "x": 260,
+        "y": 340,
         "wires": [
             [
                 "e45b601a19f16ca3"
-            ]
-        ]
-    },
-    {
-        "id": "094be25653a3b7e9",
-        "type": "ui-switch",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "label": "Relay 3",
-        "group": "9b0880496c877850",
-        "order": 3,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "decouple": false,
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "line",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 120,
-        "y": 540,
-        "wires": [
-            [
-                "45f4e4f99bd8cfed"
-            ]
-        ]
-    },
-    {
-        "id": "e809dc7ab0cdc73a",
-        "type": "ui-switch",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "label": "Relay 4",
-        "group": "9b0880496c877850",
-        "order": 4,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "decouple": false,
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "line",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 120,
-        "y": 600,
-        "wires": [
-            [
-                "d3d1c498c7ce4c26"
             ]
         ]
     },
@@ -161,374 +454,8 @@
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
-        "x": 540,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3a1c3693ebc30261",
-        "type": "ui-chart",
-        "z": "81ea8d2ba008bf4e",
-        "group": "07646e86c0b6dcf2",
-        "name": "Suhu DHT 1",
-        "label": "Suhu",
-        "order": 1,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "Waktu",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "timestamp",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "Suhu",
-        "yAxisProperty": "payload",
-        "yAxisPropertyType": "msg",
-        "ymin": "0",
-        "ymax": "100",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "x": 730,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d962272ebf6dab1d",
-        "type": "ui-chart",
-        "z": "81ea8d2ba008bf4e",
-        "group": "07646e86c0b6dcf2",
-        "name": "Kelembapan DHT 1",
-        "label": "Kelembapan",
-        "order": 2,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "Waktu",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "timestamp",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "Kelembapan",
-        "yAxisProperty": "payload",
-        "yAxisPropertyType": "msg",
-        "ymin": "0",
-        "ymax": "100",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "x": 750,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b9eb6f48d5cbb6f0",
-        "type": "ui-chart",
-        "z": "81ea8d2ba008bf4e",
-        "group": "d1e06d98d72940c6",
-        "name": "Kelembapan DHT 2",
-        "label": "Kelembapan",
-        "order": 2,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "Waktu",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "timestamp",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "Kelembapan",
-        "yAxisProperty": "payload",
-        "yAxisPropertyType": "msg",
-        "ymin": "0",
-        "ymax": "100",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "x": 750,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e3d3ec6943826e3f",
-        "type": "ui-chart",
-        "z": "81ea8d2ba008bf4e",
-        "group": "d1e06d98d72940c6",
-        "name": "Suhu DHT 2",
-        "label": "Suhu",
-        "order": 1,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "Waktu",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "timestamp",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "Suhu",
-        "yAxisProperty": "payload",
-        "yAxisPropertyType": "msg",
-        "ymin": "0",
-        "ymax": "100",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "x": 730,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "88572956155dae22",
-        "type": "ui-chart",
-        "z": "81ea8d2ba008bf4e",
-        "group": "b074cfa9a45a2a71",
-        "name": "Kelembapan DHT 3",
-        "label": "Kelembapan",
-        "order": 2,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "Waktu",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "timestamp",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "Kelembapan",
-        "yAxisProperty": "payload",
-        "yAxisPropertyType": "msg",
-        "ymin": "0",
-        "ymax": "100",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "x": 750,
-        "y": 340,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "dc41e455e8b395cb",
-        "type": "ui-chart",
-        "z": "81ea8d2ba008bf4e",
-        "group": "b074cfa9a45a2a71",
-        "name": "Suhu DHT 3",
-        "label": "Suhu",
-        "order": 1,
-        "chartType": "line",
-        "category": "topic",
-        "categoryType": "msg",
-        "xAxisLabel": "Waktu",
-        "xAxisProperty": "",
-        "xAxisPropertyType": "timestamp",
-        "xAxisType": "time",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "Suhu",
-        "yAxisProperty": "payload",
-        "yAxisPropertyType": "msg",
-        "ymin": "0",
-        "ymax": "100",
-        "bins": 10,
-        "action": "append",
-        "stackSeries": false,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#0095ff",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#666666"
-        ],
-        "textColorDefault": true,
-        "gridColor": [
-            "#e5e5e5"
-        ],
-        "gridColorDefault": true,
-        "width": 6,
-        "height": 8,
-        "className": "",
-        "x": 730,
-        "y": 280,
+        "x": 260,
+        "y": 400,
         "wires": [
             []
         ]
@@ -579,7 +506,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 310,
+        "x": 450,
         "y": 40,
         "wires": []
     },
@@ -596,7 +523,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
+        "x": 260,
         "y": 40,
         "wires": [
             [
@@ -617,7 +544,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 130,
+        "x": 270,
         "y": 100,
         "wires": [
             [
@@ -638,7 +565,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
+        "x": 260,
         "y": 160,
         "wires": [
             [
@@ -659,179 +586,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 130,
+        "x": 270,
         "y": 220,
         "wires": [
             [
                 "623d78f5bca2765d"
-            ]
-        ]
-    },
-    {
-        "id": "8e60ee051369152f",
-        "type": "mqtt in",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/dht/temp3",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "23e15791c0b07c10",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 120,
-        "y": 280,
-        "wires": [
-            [
-                "a3d2efca416990bf"
-            ]
-        ]
-    },
-    {
-        "id": "6b7a049db6e50f14",
-        "type": "mqtt in",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/dht/lembap3",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "23e15791c0b07c10",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 130,
-        "y": 340,
-        "wires": [
-            [
-                "06089b6204e10bc1"
-            ]
-        ]
-    },
-    {
-        "id": "fef49bfe991aeed3",
-        "type": "mqtt in",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/dht/gtemp1",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "23e15791c0b07c10",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 550,
-        "y": 40,
-        "wires": [
-            [
-                "3a1c3693ebc30261"
-            ]
-        ]
-    },
-    {
-        "id": "c28acf97c1e72536",
-        "type": "mqtt in",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/dht/glembap1",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "23e15791c0b07c10",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 550,
-        "y": 100,
-        "wires": [
-            [
-                "d962272ebf6dab1d"
-            ]
-        ]
-    },
-    {
-        "id": "59c98107dd00593d",
-        "type": "mqtt in",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/dht/gtemp2",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "23e15791c0b07c10",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 550,
-        "y": 160,
-        "wires": [
-            [
-                "e3d3ec6943826e3f"
-            ]
-        ]
-    },
-    {
-        "id": "42e227cf14470a9e",
-        "type": "mqtt in",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/dht/glembap2",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "23e15791c0b07c10",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 550,
-        "y": 220,
-        "wires": [
-            [
-                "b9eb6f48d5cbb6f0"
-            ]
-        ]
-    },
-    {
-        "id": "d7bae30f2a7c07a2",
-        "type": "mqtt in",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/dht/gtemp3",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "23e15791c0b07c10",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 550,
-        "y": 280,
-        "wires": [
-            [
-                "dc41e455e8b395cb"
-            ]
-        ]
-    },
-    {
-        "id": "d3a5c0ce54084f0f",
-        "type": "mqtt in",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/dht/glembap3",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "23e15791c0b07c10",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 550,
-        "y": 340,
-        "wires": [
-            [
-                "88572956155dae22"
             ]
         ]
     },
@@ -849,8 +608,8 @@
         "correl": "",
         "expiry": "",
         "broker": "23e15791c0b07c10",
-        "x": 300,
-        "y": 420,
+        "x": 440,
+        "y": 280,
         "wires": []
     },
     {
@@ -867,44 +626,8 @@
         "correl": "",
         "expiry": "",
         "broker": "23e15791c0b07c10",
-        "x": 300,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "45f4e4f99bd8cfed",
-        "type": "mqtt out",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/relay/3",
-        "qos": "2",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "23e15791c0b07c10",
-        "x": 300,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "d3d1c498c7ce4c26",
-        "type": "mqtt out",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/relay/4",
-        "qos": "2",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "23e15791c0b07c10",
-        "x": 300,
-        "y": 600,
+        "x": 440,
+        "y": 340,
         "wires": []
     },
     {
@@ -953,58 +676,8 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 310,
+        "x": 450,
         "y": 160,
-        "wires": []
-    },
-    {
-        "id": "a3d2efca416990bf",
-        "type": "ui-gauge",
-        "z": "81ea8d2ba008bf4e",
-        "name": "Suhu DHT3",
-        "group": "d098783a63f0c24c",
-        "order": 1,
-        "width": "6",
-        "height": "3",
-        "gtype": "gauge-half",
-        "gstyle": "rounded",
-        "title": "Suhu",
-        "units": "℃",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#00ff77"
-            },
-            {
-                "from": "20",
-                "color": "#b5e222"
-            },
-            {
-                "from": "40",
-                "color": "#fef102"
-            },
-            {
-                "from": "60",
-                "color": "#ff8800"
-            },
-            {
-                "from": "80",
-                "color": "#ff0000"
-            }
-        ],
-        "min": "0",
-        "max": "100",
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 310,
-        "y": 280,
         "wires": []
     },
     {
@@ -1053,7 +726,7 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 330,
+        "x": 470,
         "y": 100,
         "wires": []
     },
@@ -1103,344 +776,32 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 330,
+        "x": 470,
         "y": 220,
         "wires": []
     },
     {
-        "id": "06089b6204e10bc1",
-        "type": "ui-gauge",
+        "id": "bb9e6755dff55c51",
+        "type": "ui-template",
         "z": "81ea8d2ba008bf4e",
-        "name": "Kelembapan DHT3",
-        "group": "d098783a63f0c24c",
-        "order": 2,
-        "width": "6",
-        "height": "3",
-        "gtype": "gauge-half",
-        "gstyle": "needle",
-        "title": "Kelembapan",
-        "units": "%",
-        "icon": "",
-        "prefix": "",
-        "suffix": "",
-        "segments": [
-            {
-                "from": "0",
-                "color": "#00ff77"
-            },
-            {
-                "from": "20",
-                "color": "#b5e222"
-            },
-            {
-                "from": "40",
-                "color": "#fedd02"
-            },
-            {
-                "from": "60",
-                "color": "#ff8800"
-            },
-            {
-                "from": "80",
-                "color": "#ff0000"
-            }
-        ],
-        "min": 0,
-        "max": "100",
-        "sizeThickness": 16,
-        "sizeGap": 4,
-        "sizeKeyThickness": 8,
-        "styleRounded": true,
-        "styleGlow": false,
-        "className": "",
-        "x": 330,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "9b0880496c877850",
-        "type": "ui-group",
-        "name": "Relay",
-        "page": "32eb8f52687781d5",
-        "width": "6",
-        "height": "1",
-        "order": 4,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "48478668d2bb73ed",
-        "type": "ui-group",
-        "name": "Cam 1",
-        "page": "2f458da2b73d43da",
-        "width": "6",
-        "height": "1",
+        "group": "122532c25e1a593b",
+        "page": "",
+        "ui": "",
+        "name": "",
         "order": 1,
-        "showTitle": true,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<img height=\"50px\" src=\"https://github.com/aridwann/node-red-kosabangsa-2024/blob/main/logo/logo_utb.png\" alt=\"logo_utb\"/>\n<img height=\"50px\" src=\"https://github.com/aridwann/node-red-kosabangsa-2024/blob/main/logo/logo_unpas.png\" alt=\"logo_unpas\"/>\n<img height=\"50px\" src=\"https://github.com/aridwann/node-red-kosabangsa-2024/blob/main/logo/logo_cianjur.png\" alt=\"logo_cianjur\"/>\n<img height=\"50px\" src=\"https://github.com/aridwann/node-red-kosabangsa-2024/blob/main/logo/kosabangsa.png\" alt=\"kosabangsa\"/>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
         "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "07646e86c0b6dcf2",
-        "type": "ui-group",
-        "name": "Grafik DHT 1",
-        "page": "39c1441e344d8bd5",
-        "width": "6",
-        "height": "1",
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "d1e06d98d72940c6",
-        "type": "ui-group",
-        "name": "Grafik DHT 2",
-        "page": "39c1441e344d8bd5",
-        "width": "6",
-        "height": "1",
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "b074cfa9a45a2a71",
-        "type": "ui-group",
-        "name": "Grafik DHT 3",
-        "page": "39c1441e344d8bd5",
-        "width": "6",
-        "height": "1",
-        "order": 3,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "5fbbb83a49a332fb",
-        "type": "ui-group",
-        "name": "DHT 1",
-        "page": "32eb8f52687781d5",
-        "width": "6",
-        "height": "1",
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "23e15791c0b07c10",
-        "type": "mqtt-broker",
-        "name": "mqtt",
-        "broker": "localhost",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "d5ffd97107a937b2",
-        "type": "ui-group",
-        "name": "DHT 2",
-        "page": "32eb8f52687781d5",
-        "width": "6",
-        "height": "1",
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "d098783a63f0c24c",
-        "type": "ui-group",
-        "name": "DHT 3",
-        "page": "32eb8f52687781d5",
-        "width": "6",
-        "height": "1",
-        "order": 3,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "32eb8f52687781d5",
-        "type": "ui-page",
-        "name": "Dashboard",
-        "ui": "36f6cd7493a231b5",
-        "path": "/page1",
-        "icon": "mdi-view-dashboard",
-        "layout": "grid",
-        "theme": "41937a03db17bc48",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 1,
-        "className": "",
-        "visible": true,
-        "disabled": false
-    },
-    {
-        "id": "2f458da2b73d43da",
-        "type": "ui-page",
-        "name": "Monitoring ",
-        "ui": "36f6cd7493a231b5",
-        "path": "/page2",
-        "icon": "mdi-cctv",
-        "layout": "grid",
-        "theme": "41937a03db17bc48",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 2,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "39c1441e344d8bd5",
-        "type": "ui-page",
-        "name": "Timeline",
-        "ui": "36f6cd7493a231b5",
-        "path": "/page3",
-        "icon": "mdi-chart-areaspline",
-        "layout": "grid",
-        "theme": "41937a03db17bc48",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 3,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "36f6cd7493a231b5",
-        "type": "ui-base",
-        "name": "My Dashboard",
-        "path": "/dashboard",
-        "appIcon": "",
-        "includeClientData": true,
-        "acceptsClientConfig": [
-            "ui-notification",
-            "ui-control"
-        ],
-        "showPathInSidebar": false,
-        "showPageTitle": true,
-        "navigationStyle": "default",
-        "titleBarStyle": "default"
-    },
-    {
-        "id": "41937a03db17bc48",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
+        "x": 260,
+        "y": 460,
+        "wires": [
+            []
+        ]
     }
 ]
