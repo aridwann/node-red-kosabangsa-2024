@@ -196,20 +196,6 @@
         "disabled": false
     },
     {
-        "id": "9b0880496c877850",
-        "type": "ui-group",
-        "name": "Relay",
-        "page": "32eb8f52687781d5",
-        "width": "6",
-        "height": "1",
-        "order": 3,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
         "id": "5fbbb83a49a332fb",
         "type": "ui-group",
         "name": "DHT 1",
@@ -256,15 +242,15 @@
         ],
         "order": 2,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "48478668d2bb73ed",
         "type": "ui-group",
-        "name": "Cam 1",
+        "name": "Camera",
         "page": "2f458da2b73d43da",
-        "width": "6",
+        "width": "12",
         "height": "1",
         "order": 1,
         "showTitle": true,
@@ -324,7 +310,7 @@
         "name": "Tentang Kami",
         "ui": "36f6cd7493a231b5",
         "path": "/page4",
-        "icon": "home",
+        "icon": "mdi-account",
         "layout": "grid",
         "theme": "41937a03db17bc48",
         "breakpoints": [
@@ -359,82 +345,14 @@
         "type": "ui-group",
         "name": "Tentang Kami",
         "page": "6cc0a9e10713cb5b",
-        "width": "6",
+        "width": "12",
         "height": "1",
         "order": 1,
-        "showTitle": true,
+        "showTitle": false,
         "className": "",
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
-    },
-    {
-        "id": "13e5807123579897",
-        "type": "ui-switch",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "label": "Relay 1",
-        "group": "9b0880496c877850",
-        "order": 1,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "decouple": false,
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "line",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 260,
-        "y": 280,
-        "wires": [
-            [
-                "9e0d2f66f82fdcdd"
-            ]
-        ]
-    },
-    {
-        "id": "eb906b0577114f7a",
-        "type": "ui-switch",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "label": "Relay 2",
-        "group": "9b0880496c877850",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "decouple": false,
-        "topic": "topic",
-        "topicType": "msg",
-        "style": "",
-        "className": "",
-        "layout": "row-spread",
-        "clickableArea": "line",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 260,
-        "y": 340,
-        "wires": [
-            [
-                "e45b601a19f16ca3"
-            ]
-        ]
     },
     {
         "id": "19570478c8ffcc2b",
@@ -455,7 +373,7 @@
         "templateScope": "local",
         "className": "",
         "x": 260,
-        "y": 400,
+        "y": 280,
         "wires": [
             []
         ]
@@ -595,42 +513,6 @@
         ]
     },
     {
-        "id": "9e0d2f66f82fdcdd",
-        "type": "mqtt out",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/relay/1",
-        "qos": "2",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "23e15791c0b07c10",
-        "x": 440,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "e45b601a19f16ca3",
-        "type": "mqtt out",
-        "z": "81ea8d2ba008bf4e",
-        "name": "",
-        "topic": "/relay/2",
-        "qos": "2",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "23e15791c0b07c10",
-        "x": 440,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "778e9e077e9e9efb",
         "type": "ui-gauge",
         "z": "81ea8d2ba008bf4e",
@@ -699,11 +581,11 @@
         "segments": [
             {
                 "from": "0",
-                "color": "#00ff77"
+                "color": "#ff0000"
             },
             {
                 "from": "20",
-                "color": "#b5e222"
+                "color": "#ff8800"
             },
             {
                 "from": "40",
@@ -711,11 +593,11 @@
             },
             {
                 "from": "60",
-                "color": "#ff8800"
+                "color": "#b5e222"
             },
             {
                 "from": "80",
-                "color": "#ff0000"
+                "color": "#00ff77"
             }
         ],
         "min": 0,
@@ -749,11 +631,11 @@
         "segments": [
             {
                 "from": "0",
-                "color": "#00ff77"
+                "color": "#ff0000"
             },
             {
                 "from": "20",
-                "color": "#b5e222"
+                "color": "#ff8800"
             },
             {
                 "from": "40",
@@ -761,11 +643,11 @@
             },
             {
                 "from": "60",
-                "color": "#ff8800"
+                "color": "#b5e222"
             },
             {
                 "from": "80",
-                "color": "#ff0000"
+                "color": "#00ff77"
             }
         ],
         "min": 0,
@@ -779,5 +661,29 @@
         "x": 470,
         "y": 220,
         "wires": []
+    },
+    {
+        "id": "c7ecf1fb3ed6415c",
+        "type": "ui-template",
+        "z": "81ea8d2ba008bf4e",
+        "group": "122532c25e1a593b",
+        "page": "",
+        "ui": "",
+        "name": "Tentang Kami",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    #logo{\n        display: flex;\n        width: 100%;\n        gap: 20px;\n        flex-wrap: wrap;\n        justify-content: center;\n        margin-top: 20px;\n    }\n</style>\n<h1 id=\"h1\">Tentang Kami</h1>\n<div id=\"logo\">\n    <img height=\"60px\" src=\"https://webutama.utb-univ.ac.id/storage/uploads/images/254721151_utb_kotak.png\" alt=\"logo_utb\"/>\n    <img height=\"60px\" src=\"https://situmbkm.unpas.ac.id/assets/img/unpas_logo.png\" alt=\"logo_unpas\"/>\n    <img height=\"60px\" src=\"https://www.cianjurkab.go.id/images/cianjur.png\"  alt=\"logo_cianjur\"/>\n    <img height=\"60px\" src=\"https://files.planet.ung.ac.id/fak/10/kosabangsa-logo-04.09.2023.17.10.48.png\"  alt=\"logo_kosabangsa\"/>\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 280,
+        "y": 320,
+        "wires": [
+            []
+        ]
     }
 ]
