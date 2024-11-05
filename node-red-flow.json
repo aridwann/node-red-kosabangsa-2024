@@ -779,29 +779,5 @@
         "x": 470,
         "y": 220,
         "wires": []
-    },
-    {
-        "id": "bb9e6755dff55c51",
-        "type": "ui-template",
-        "z": "81ea8d2ba008bf4e",
-        "group": "122532c25e1a593b",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": "<img height=\"50px\" src=\"https://github.com/aridwann/node-red-kosabangsa-2024/blob/main/logo/logo_utb.png\" alt=\"logo_utb\"/>\n<img height=\"50px\" src=\"https://github.com/aridwann/node-red-kosabangsa-2024/blob/main/logo/logo_unpas.png\" alt=\"logo_unpas\"/>\n<img height=\"50px\" src=\"https://github.com/aridwann/node-red-kosabangsa-2024/blob/main/logo/logo_cianjur.png\" alt=\"logo_cianjur\"/>\n<img height=\"50px\" src=\"https://github.com/aridwann/node-red-kosabangsa-2024/blob/main/logo/kosabangsa.png\" alt=\"kosabangsa\"/>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 260,
-        "y": 460,
-        "wires": [
-            []
-        ]
     }
 ]
